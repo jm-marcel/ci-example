@@ -1,2 +1,2 @@
-# ci-example
+# CI Example
 CI Example
