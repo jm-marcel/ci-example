@@ -8,6 +8,10 @@ describe("Utils", () => {
   });
 
   describe("acharCaracter", () => {
+    test("comprimento invalido", () => {
+      expect(acharCaracter(-4, "abcde", "c")).toBe("comprimento invalido");
+    });
+
     test("caracter não encontrado", () => {
       expect(acharCaracter(5, "abcde", "f")).toBe("caracter não encontrado");
     });
