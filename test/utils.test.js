@@ -9,6 +9,11 @@ describe("Utils", () => {
     test("inicio nao pode ser negativo", () => {
       expect(gerarNumeroAleatorio(-20, -5)).toBe(-2);
     });
+
+    test("numero entre intervalo", () => {
+      expect(gerarNumeroAleatorio(1, 5)).toBeGreaterThan(0);
+      expect(gerarNumeroAleatorio(1, 5)).toBeLessThan(6);
+    });
   });
 
   describe("acharCaracter", () => {
